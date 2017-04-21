@@ -2,12 +2,11 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "javascript dev env ",
-  "scripts": {},
+  "scripts": {
+    "start": "node buildScripts/srcServer"
+  },
   "author": "aeid",
   "license": "MIT",
-  "scripts" : {
-    "start" : "node buildScripts/srcServer"
-  },
   "dependencies": {
     "whatwg-fetch": "1.0.0"
   },
