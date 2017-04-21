@@ -4406,7 +4406,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@2.65.0, request@^2.65.0:
+request@2.65.0, request@^2.55.0, request@^2.65.0:
   version "2.65.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.65.0.tgz#cc1a3bc72b96254734fc34296da322f9486ddeba"
   dependencies:
@@ -4430,7 +4430,7 @@ request@2.65.0, request@^2.65.0:
     tough-cookie "~2.2.0"
     tunnel-agent "~0.4.1"
 
-request@^2.55.0, request@^2.72.0, request@^2.81.0:
+request@^2.72.0, request@^2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
