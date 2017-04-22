@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "javascript dev env ",
   "scripts": {
-    "start": "node buildScripts/srcServer"
+    "prestart": "node buildScripts/startMessage",
+    "start": "npm-run-all --parallel security-check open:src",
+    "security-check": "nsp check",
+    "open:src": "node buildScripts/srcServer",
+    "localtunnel": "lt --port 3000 --subdomain aeid",
+    "share": "npm-run-all --parallel open:src localtunnel"
   },
   "author": "aeid",
   "license": "MIT",
   "dependencies": {
-    "whatwg-fetch": "1.0.0"
+    "whatwg-fetch": "*"
   },
   "devDependencies": {
     "babel-cli": "6.16.0",
@@ -34,8 +39,8 @@
     "localtunnel": "1.8.1",
     "mocha": "3.1.2",
     "nock": "8.1.0",
-    "npm-run-all": "3.1.1",
-    "nsp": "2.6.2",
+    "npm-run-all": "^4.0.2",
+    "nsp": "^2.6.3",
     "numeral": "1.5.3",
     "open": "0.0.5",
     "rimraf": "2.5.4",
